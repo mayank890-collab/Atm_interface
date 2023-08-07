@@ -1,0 +1,49 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    
+	    int choice,amt;
+	    
+	    
+	    System.out.println("Enter the balance amount");
+	    Scanner sc = new Scanner(System.in);
+	    amt = sc.nextInt();
+	    
+	    System.out.println("Enter your choice");
+	    choice = sc.nextInt();
+	    
+	    if(choice == 1)
+	    {
+	        int with;
+	        System.out.println("Enter the Amount which you want to withdrawal");
+	        with = sc.nextInt();
+	        if(amt>=with)
+	        {
+	            System.out.println("the Amount is succesfully withdrawal ");
+	        }
+	        else
+	        {
+	            System.out.println("Insufficient balanced");
+	        }
+	        System.out.println("Balanced Amount is :"+(amt-with));
+	   }
+	   else if(choice == 2)
+	   {
+	       int dep;
+	        System.out.println("Enter the Amount which you want to dep");
+	        dep = sc.nextInt();
+	        
+	        System.out.println("Balanced Amount is :"+(amt+dep));
+	   }
+	   else if(choice ==3)
+	   {
+	       System.out.println("Balanced :"+amt);
+	   }
+	    
+	   else if(choice ==4)
+	   {
+	       System.exit(0);
+	   }
+	}
+}
